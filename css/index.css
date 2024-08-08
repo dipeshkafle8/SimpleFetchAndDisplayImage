@@ -1,0 +1,25 @@
+#root{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    row-gap:1em;
+    column-gap:1em;
+}
+.card-items{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border:2px solid black;
+    width:20vw;
+    height:40vh;
+}
+.card-items img{   
+    width:15vw;
+    height:25vh;
+}
+.card-items span{
+    text-wrap:stable;
+    font-size:1.2em;
+    font-weight:500;
+}

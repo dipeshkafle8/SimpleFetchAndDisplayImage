@@ -1,10 +1,18 @@
 const displaydiv=document.querySelector("#root");
 
+
+//displaying image on a page
 function getImage(obj){
-    const image=document.createElement('img');
-    image.src=obj.url;
-    console.log(image);
-    displaydiv.append(image);
+    const div=document.createElement('div');
+    div.className="card-items";
+    const span=document.createElement('span');
+    span.innerText=obj.title;
+    const img=document.createElement('img');
+    img.src=obj.thumbnailUrl;
+
+    div.append(img,span);
+    displaydiv.append(div);
+    
 }
 
 
